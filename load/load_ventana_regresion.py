@@ -1,7 +1,6 @@
 # load/load_ventana_regresion.py
 from PyQt5 import QtWidgets, uic
-
-from clases.regresion_lineal import RegresionLineal
+from SegundoParcial.regreli import RegresionLineal
 from datos.casos_prueba import *
 
 class VentanaRegresion(QtWidgets.QDialog):
