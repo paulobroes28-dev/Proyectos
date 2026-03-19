@@ -7,13 +7,13 @@ class VentanaRegresion(QtWidgets.QDialog):
 
     def __init__(self):
         super().__init__()
-        uic.loadUi("gui/ventana_regresion.ui", self)
+        uic.loadUi("gui/programa_1.ui", self)
         self.show()
 
-        self.btnCaso1.clicked.connect(lambda: self.ejecutarCaso(1))
-        self.btnCaso2.clicked.connect(lambda: self.ejecutarCaso(2))
-        self.btnCaso3.clicked.connect(lambda: self.ejecutarCaso(3))
-        self.btnCaso4.clicked.connect(lambda: self.ejecutarCaso(4))
+        self.boton_sumar.clicked.connect(lambda: self.ejecutarCaso(1))
+        self.boton_sumar_2.clicked.connect(lambda: self.ejecutarCaso(2))
+        self.boton_sumar_3.clicked.connect(lambda: self.ejecutarCaso(3))
+        self.boton_sumar_4.clicked.connect(lambda: self.ejecutarCaso(4))
 
     def ejecutarCaso(self, caso):
         if caso == 1:
@@ -29,16 +29,16 @@ class VentanaRegresion(QtWidgets.QDialog):
         modelo.calcular(XK)
 
         # Mostrar resultados actuales
-        self.lblB0.setText(str(round(modelo.b0, 4)))
-        self.lblB1.setText(str(round(modelo.b1, 6)))
-        self.lblR.setText(str(round(modelo.r, 4)))
-        self.lblR2.setText(str(round(modelo.r2, 4)))
-        self.lblYk.setText(str(round(modelo.yk, 4)))
+        self.lineEdit.setText(str(round(modelo.b0, 4)))
+        self.lineEdit_2.setText(str(round(modelo.b1, 6)))
+        self.lineEdit_3.setText(str(round(modelo.r, 4)))
+        self.lineEdit_4.setText(str(round(modelo.r2, 4)))
+        self.lineEdit_5.setText(str(round(modelo.yk, 4)))
 
         # Mostrar resultados esperados
         esperado = CASOS_ESPERADOS[caso]
-        self.lblExpB0.setText(str(esperado["b0"]))
-        self.lblExpB1.setText(str(esperado["b1"]))
-        self.lblExpR.setText(str(esperado["r"]))
-        self.lblExpR2.setText(str(esperado["r2"]))
-        self.lblExpYk.setText(str(esperado["yk"]))
+        self.lineEdit_6.setText(str(esperado["b0"]))
+        self.lineEdit_7.setText(str(esperado["b1"]))
+        self.lineEdit_8.setText(str(esperado["r"]))
+        self.lineEdit_9.setText(str(esperado["r2"]))
+        self.lineEdit_10.setText(str(esperado["yk"]))

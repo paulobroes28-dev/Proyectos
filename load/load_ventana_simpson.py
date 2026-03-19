@@ -1,30 +1,24 @@
-# load/load_ventana_integracion.py
 from PyQt5 import QtWidgets, uic
-from SegundoParcial import Simpson
-from datos.casos_pruebas import CASOS_INTEGRACION
+from SegundoParcial.simpson import Simpson
 
 class VentanaSimpson(QtWidgets.QDialog):
 
     def __init__(self):
         super().__init__()
-        uic.loadUi("gui/ventana_integracion.ui", self)
+        uic.loadUi("gui/programa_2.ui", self)
         self.show()
 
-        self.btnCaso1.clicked.connect(lambda: self.ejecutarCaso(1))
-        self.btnCaso2.clicked.connect(lambda: self.ejecutarCaso(2))
-        self.btnCaso3.clicked.connect(lambda: self.ejecutarCaso(3))
+        # Conectar botón
+        self.boton_sumar.clicked.connect(self.calcularIntegral)
 
-    def ejecutarCaso(self, caso):
-        datos = CASOS_INTEGRACION[caso]
+    def calcularIntegral(self):
+            # Leer datos de entrada
+            x = float(self.edit_numero1.text())
+            dof = int(self.edit_numero1_2.text())
 
-        integracion = IntegracionSimpson(
-            datos["x"],
-            datos["dof"]
-        )
-        integracion.calcular()
+            # Crear objeto de integración
+            integracion = Simpson(x, dof)
+            integracion.calcular()
 
-        # Mostrar resultado calculado
-        self.lblResultado.setText(str(round(integracion.resultado, 5)))
-
-        # Mostrar valor esperado
-        self.lblEsperado.setText(str(datos["esperado"]))
+            # Mostrar resultado
+            self.edit_numero1_3.setText(str(round(integracion.resultado, 5)))

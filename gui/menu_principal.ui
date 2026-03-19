@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>603</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #f9f9f9;
+    font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+    font-size: 18pt;
+    color: #333333;
+}
+
+QMenuBar {
+    background-color: #ffffff;
+    font-size: 18pt;
+    font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+    color: #333333;
+    border-bottom: 1px solid #dddddd;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 6px 12px;
+}
+
+QMenuBar::item:selected {
+    background: #e6e6e6;
+    border-radius: 4px;
+}
+
+QMenu {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    font-size: 18pt;
+    font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+    color: #333333;
+}
+
+QMenu::item {
+    padding: 6px 20px;
+    background: transparent;
+}
+
+QMenu::item:selected {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+QAction {
+    font-size: 18pt;
+    font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+    color: #333333;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>603</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuProyectos">
+    <property name="title">
+     <string>Proyectos</string>
+    </property>
+    <widget class="QMenu" name="menuSegundo_Parcial">
+     <property name="title">
+      <string>Segundo Parcial</string>
+     </property>
+     <addaction name="actionRegresi_n_Lineal"/>
+     <addaction name="actionIntegraci_n_Num_rica"/>
+     <addaction name="separator"/>
+     <addaction name="actionSalir"/>
+    </widget>
+    <addaction name="menuSegundo_Parcial"/>
+   </widget>
+   <addaction name="menuProyectos"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionRegresi_n_Lineal">
+   <property name="text">
+    <string>Regresión Lineal</string>
+   </property>
+  </action>
+  <action name="actionIntegraci_n_Num_rica">
+   <property name="text">
+    <string>Integración Numérica</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

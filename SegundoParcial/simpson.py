@@ -1,5 +1,4 @@
-import numpy as np
-from scipy.special import gamma
+import math
 
 class Simpson(object):
 
