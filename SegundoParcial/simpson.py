@@ -3,26 +3,34 @@ from scipy.special import gamma
 
 class Simpson(object):
 
-    def __init__(self, f, a, b, n):
-        self.f = f
-        self.a = a
-        self.b = b
-        self.n = n
+    def __init__(self, x, dof, n=1000):
+        self.x = x
+        self.dof = dof
+        self.n = n if n % 2 == 0 else n + 1  # n debe ser par
+        self.resultado = 0
+
+    def gamma(self, x):
+        return math.gamma(x)
+
+    def funcion_t(self, x):
+        num = self.gamma((self.dof + 1) / 2)
+        den = math.sqrt(self.dof * math.pi) * self.gamma(self.dof / 2)
+        base = 1 + (x**2 / self.dof)
+        exp = - (self.dof + 1) / 2
+        return (num / den) * (base ** exp)
 
     def calcular(self):
-        h = (self.b - self.a) / self.n
+        a = 0
+        b = self.x
+        h = (b - a) / self.n
 
-        sum_odd = 0
-        sum_even = 0
+        suma = self.funcion_t(a) + self.funcion_t(b)
 
         for i in range(1, self.n):
-            x_i = self.a + i * h
+            x_i = a + i * h
             if i % 2 == 0:
-                sum_even += self.f(x_i)
+                suma += 2 * self.funcion_t(x_i)
             else:
-                sum_odd += self.f(x_i)
+                suma += 4 * self.funcion_t(x_i)
 
-        integral = (h / 3) * (self.f(self.a) + 4 * sum_odd + 2 * sum_even + self.f(self.b))
-        return integral
-
-
+        self.resultado = (h / 3) * suma
