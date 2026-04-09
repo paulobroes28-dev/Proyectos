@@ -1,34 +1,47 @@
 from SegundoParcial.simpson import Simpson
 import math
 
-class Programa3(object):
+# clases/integracion_inversa.py
+class IntegracionInversa(object):
 
-    def __init__(self, dof, p, d=0.5, tolerancia=0.00001):
-        self.dof = dof
+    def __init__(self, p, dof, error=0.00001):
         self.p = p
-        self.d = d
-        self.tolerancia = tolerancia
+        self.dof = dof
+        self.error = error
+
+        self.x = 1.0     # valor inicial
+        self.d = 0.5     # incremento inicial
         self.resultado = 0
 
-    def gamma(self, x):
-        return math.gamma(x)    
-    
-    def funcion_t(self, x):
-        while True:
-            simpson = Simpson(x, self.dof)
-            simpson.calcular()
-            resultado_simpson = simpson.resultado
-
-            if abs(resultado_simpson - self.p) < self.tolerancia:
-                return x
-            elif resultado_simpson < self.p:
-                x += self.d
-            else:
-                x -= self.d
-            
     def calcular(self):
-        x = self.funcion_t(self.d)
-        self.resultado = x
+        signo_anterior = None
 
-    def obtener_resultado(self):
-        return self.resultado
+        while True:
+            integracion = Simpson(self.x, self.dof)
+            integracion.calcular()
+            valor_actual = integracion.resultado
+
+            diferencia = valor_actual - self.p
+
+            # ¿Ya es suficientemente cercano?
+            if abs(diferencia) < self.error:
+                self.resultado = self.x
+                break
+
+            signo_actual = diferencia > 0
+
+            # Ajustar x
+            if diferencia < 0:
+                self.x += self.d
+            else:
+                self.x -= self.d
+
+            # Ajustar d si cambia el signo
+            if signo_anterior is not None and signo_actual != signo_anterior:
+                self.d /= 2
+
+            signo_anterior = signo_actual
+
+            # Evitar x negativo
+            if self.x < 0:
+                self.x = 0
