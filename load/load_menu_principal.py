@@ -11,7 +11,7 @@ class MenuPrincipal(QtWidgets.QMainWindow):
 
         self.actionRegresi_n_Lineal.triggered.connect(self.abrirRegresion)
         self.actionIntegraci_n_Num_rica.triggered.connect(self.abrirIntegracion)
-        self.actionIntegraci_n_Inv.triggered.connect(self.abrirPrograma3)
+        self.actionIntegraci_n_Inversa.triggered.connect(self.abrirPrograma3)
         self.actionSalir.triggered.connect(self.salir)
 
     def abrirRegresion(self):

@@ -83,6 +83,7 @@ QAction {
      </property>
      <addaction name="actionRegresi_n_Lineal"/>
      <addaction name="actionIntegraci_n_Num_rica"/>
+     <addaction name="actionIntegraci_n_Inversa"/>
      <addaction name="separator"/>
      <addaction name="actionSalir"/>
     </widget>
@@ -104,6 +105,11 @@ QAction {
   <action name="actionSalir">
    <property name="text">
     <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionIntegraci_n_Inversa">
+   <property name="text">
+    <string>Integración Inversa</string>
    </property>
   </action>
  </widget>

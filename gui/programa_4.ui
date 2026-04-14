@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>702</width>
+    <height>578</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* ===============================
+   FUENTE GLOBAL
+   =============================== */
+* {
+    font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+    font-size: 18px;
+    color: #1e293b;
+}
+
+/* ===============================
+   QDialog
+   =============================== */
+QDialog {
+    background-color: #f0f9ff;
+    border: 2px solid #38bdf8;
+    border-radius: 12px;
+}
+
+/* ===============================
+   QLabel
+   =============================== */
+QLabel {
+    color: #0f172a;
+    background: transparent;
+    font-weight: 500;
+}
+
+/* Títulos */
+QLabel#labelResultados {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0284c7;
+}
+
+/* ===============================
+   QLineEdit
+   =============================== */
+QLineEdit {
+    background-color: #e0f2fe;
+    border: 2px solid #38bdf8;
+    border-radius: 8px;
+    padding: 6px 10px;
+
+    color: #0c4a6e;
+    font-weight: 600;
+    selection-background-color: #7dd3fc;
+}
+
+/* Focus */
+QLineEdit:focus {
+    background-color: #ffffff;
+    border: 2px solid #0ea5e9;
+}
+
+/* Disabled */
+QLineEdit:disabled {
+    background-color: #e0f2fe;
+    border: 2px solid #bae6fd;
+    color: #64748b;
+}
+
+/* ===============================
+   QPushButton
+   =============================== */
+QPushButton {
+    background-color: #38bdf8;
+    border: 2px solid #0ea5e9;
+    border-radius: 10px;
+    padding: 8px 18px;
+
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* Hover */
+QPushButton:hover {
+    background-color: #7dd3fc;
+    border: 2px solid #0284c7;
+}
+
+/* Pressed */
+QPushButton:pressed {
+    background-color: #0284c7;
+    border: 2px solid #075985;
+    color: #ffffff;
+}
+
+/* Disabled */
+QPushButton:disabled {
+    background-color: #bae6fd;
+    border: 2px solid #e0f2fe;
+    color: #94a3b8;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="3" column="5">
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>rxy=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="5">
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>r2=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>rxy=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>r2=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>B0=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Tail area=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="1">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>B1=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="5">
+    <widget class="QLabel" name="label_11">
+     <property name="text">
+      <string>Tail area=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3" colspan="6">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Resultados</string>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="5" colspan="2">
+    <widget class="QLabel" name="label_20">
+     <property name="text">
+      <string>UPI(70%)=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="7" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_17"/>
+   </item>
+   <item row="17" column="1" colspan="2">
+    <widget class="QLabel" name="label_17">
+     <property name="text">
+      <string>LPI(70%)=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="3">
+    <widget class="QLineEdit" name="lineEdit_14"/>
+   </item>
+   <item row="17" column="7" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_18"/>
+   </item>
+   <item row="17" column="5" colspan="2">
+    <widget class="QLabel" name="label_21">
+     <property name="text">
+      <string>LPI(70%)=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="3">
+    <widget class="QLineEdit" name="lineEdit_12"/>
+   </item>
+   <item row="15" column="5" colspan="2">
+    <widget class="QLabel" name="label_19">
+     <property name="text">
+      <string>Range=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="6" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_4"/>
+   </item>
+   <item row="11" column="2" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_10"/>
+   </item>
+   <item row="11" column="6" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_5"/>
+   </item>
+   <item row="15" column="1" colspan="2">
+    <widget class="QLabel" name="label_15">
+     <property name="text">
+      <string>Range=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="7" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_16"/>
+   </item>
+   <item row="16" column="1" colspan="2">
+    <widget class="QLabel" name="label_16">
+     <property name="text">
+      <string>UPI(70%)=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="2" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_9"/>
+   </item>
+   <item row="14" column="5" colspan="2">
+    <widget class="QLabel" name="label_18">
+     <property name="text">
+      <string>Yk=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="3">
+    <widget class="QLineEdit" name="lineEdit_13"/>
+   </item>
+   <item row="8" column="8">
+    <widget class="QLineEdit" name="lineEdit_3"/>
+   </item>
+   <item row="2" column="1" colspan="3">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Valor real</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="6" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_2"/>
+   </item>
+   <item row="7" column="2" rowspan="2" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_8"/>
+   </item>
+   <item row="3" column="2" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_6">
+     <property name="sizeIncrement">
+      <size>
+       <width>3</width>
+       <height>2</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="6" colspan="3">
+    <widget class="QLineEdit" name="lineEdit"/>
+   </item>
+   <item row="5" column="2" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_7"/>
+   </item>
+   <item row="2" column="5" colspan="4">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>Valor actual</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="4">
+    <widget class="QPushButton" name="boton_sumar">
+     <property name="text">
+      <string>Caso de prueba 1</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5" colspan="4">
+    <widget class="QPushButton" name="boton_sumar_2">
+     <property name="text">
+      <string>Caso de prueba 2</string>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="3" rowspan="2">
+    <widget class="QLineEdit" name="lineEdit_11"/>
+   </item>
+   <item row="14" column="7" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_15"/>
+   </item>
+   <item row="14" column="1">
+    <widget class="QLabel" name="label_13">
+     <property name="text">
+      <string>Yk=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="5">
+    <widget class="QLabel" name="label_14">
+     <property name="text">
+      <string>B0=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="5">
+    <widget class="QLabel" name="label_12">
+     <property name="text">
+      <string>B1=</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

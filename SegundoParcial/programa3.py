@@ -1,10 +1,9 @@
 from SegundoParcial.simpson import Simpson
 import math
 
-# clases/integracion_inversa.py
 class IntegracionInversa(object):
 
-    def __init__(self, p, dof, error=0.00001):
+    def __init__(self, p, dof, error=0.000001):
         self.p = p
         self.dof = dof
         self.error = error
@@ -15,8 +14,10 @@ class IntegracionInversa(object):
 
     def calcular(self):
         signo_anterior = None
+        max_iter = 10000   # límite de iteraciones
+        iter_count = 0
 
-        while True:
+        while iter_count < max_iter:
             integracion = Simpson(self.x, self.dof)
             integracion.calcular()
             valor_actual = integracion.resultado
@@ -45,3 +46,14 @@ class IntegracionInversa(object):
             # Evitar x negativo
             if self.x < 0:
                 self.x = 0
+
+            # Si d se vuelve demasiado pequeño, detener
+            if self.d < 1e-10:
+                self.resultado = self.x
+                break
+
+            iter_count += 1
+
+        # Si se alcanzó el máximo de iteraciones sin converger
+        if iter_count == max_iter:
+            self.resultado = self.x
