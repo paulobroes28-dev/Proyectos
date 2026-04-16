@@ -113,7 +113,7 @@ QPushButton:disabled {
    <property name="geometry">
     <rect>
      <x>270</x>
-     <y>320</y>
+     <y>300</y>
      <width>161</width>
      <height>38</height>
     </rect>
@@ -138,10 +138,10 @@ QPushButton:disabled {
   <widget class="QLineEdit" name="lineEdit_3">
    <property name="geometry">
     <rect>
-     <x>312</x>
-     <y>349</y>
+     <x>310</x>
+     <y>350</y>
      <width>151</width>
-     <height>31</height>
+     <height>41</height>
     </rect>
    </property>
   </widget>
@@ -149,7 +149,7 @@ QPushButton:disabled {
    <property name="geometry">
     <rect>
      <x>150</x>
-     <y>170</y>
+     <y>140</y>
      <width>201</width>
      <height>61</height>
     </rect>
@@ -162,7 +162,7 @@ QPushButton:disabled {
    <property name="geometry">
     <rect>
      <x>270</x>
-     <y>290</y>
+     <y>250</y>
      <width>161</width>
      <height>38</height>
     </rect>
@@ -174,10 +174,10 @@ QPushButton:disabled {
   <widget class="QLineEdit" name="lineEdit">
    <property name="geometry">
     <rect>
-     <x>312</x>
-     <y>289</y>
+     <x>310</x>
+     <y>250</y>
      <width>151</width>
-     <height>31</height>
+     <height>41</height>
     </rect>
    </property>
   </widget>
@@ -185,7 +185,7 @@ QPushButton:disabled {
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>410</y>
+     <y>450</y>
      <width>131</width>
      <height>38</height>
     </rect>
@@ -198,7 +198,7 @@ QPushButton:disabled {
    <property name="geometry">
     <rect>
      <x>290</x>
-     <y>240</y>
+     <y>200</y>
      <width>153</width>
      <height>38</height>
     </rect>
@@ -236,10 +236,10 @@ QPushButton:disabled {
   <widget class="QLineEdit" name="lineEdit_5">
    <property name="geometry">
     <rect>
-     <x>312</x>
-     <y>409</y>
+     <x>310</x>
+     <y>450</y>
      <width>151</width>
-     <height>31</height>
+     <height>41</height>
     </rect>
    </property>
   </widget>
@@ -247,7 +247,7 @@ QPushButton:disabled {
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>290</y>
+     <y>250</y>
      <width>153</width>
      <height>38</height>
     </rect>
@@ -260,7 +260,7 @@ QPushButton:disabled {
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>320</y>
+     <y>300</y>
      <width>153</width>
      <height>38</height>
     </rect>
@@ -273,7 +273,7 @@ QPushButton:disabled {
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>380</y>
+     <y>400</y>
      <width>153</width>
      <height>38</height>
     </rect>
@@ -299,7 +299,7 @@ QPushButton:disabled {
    <property name="geometry">
     <rect>
      <x>270</x>
-     <y>410</y>
+     <y>450</y>
      <width>161</width>
      <height>38</height>
     </rect>
@@ -312,7 +312,7 @@ QPushButton:disabled {
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>240</y>
+     <y>200</y>
      <width>153</width>
      <height>38</height>
     </rect>
@@ -325,7 +325,7 @@ QPushButton:disabled {
    <property name="geometry">
     <rect>
      <x>270</x>
-     <y>380</y>
+     <y>400</y>
      <width>161</width>
      <height>38</height>
     </rect>
@@ -350,10 +350,10 @@ QPushButton:disabled {
   <widget class="QLineEdit" name="lineEdit_4">
    <property name="geometry">
     <rect>
-     <x>312</x>
-     <y>379</y>
+     <x>310</x>
+     <y>400</y>
      <width>151</width>
-     <height>31</height>
+     <height>41</height>
     </rect>
    </property>
   </widget>
@@ -373,10 +373,10 @@ QPushButton:disabled {
   <widget class="QLineEdit" name="lineEdit_2">
    <property name="geometry">
     <rect>
-     <x>312</x>
-     <y>319</y>
+     <x>310</x>
+     <y>300</y>
      <width>151</width>
-     <height>31</height>
+     <height>41</height>
     </rect>
    </property>
   </widget>
@@ -384,9 +384,9 @@ QPushButton:disabled {
    <property name="geometry">
     <rect>
      <x>80</x>
-     <y>289</y>
+     <y>250</y>
      <width>161</width>
-     <height>31</height>
+     <height>41</height>
     </rect>
    </property>
    <property name="sizeIncrement">
@@ -400,9 +400,9 @@ QPushButton:disabled {
    <property name="geometry">
     <rect>
      <x>80</x>
-     <y>319</y>
+     <y>300</y>
      <width>161</width>
-     <height>31</height>
+     <height>41</height>
     </rect>
    </property>
   </widget>
@@ -412,7 +412,7 @@ QPushButton:disabled {
      <x>80</x>
      <y>349</y>
      <width>161</width>
-     <height>31</height>
+     <height>41</height>
     </rect>
    </property>
   </widget>
@@ -420,9 +420,9 @@ QPushButton:disabled {
    <property name="geometry">
     <rect>
      <x>80</x>
-     <y>379</y>
+     <y>400</y>
      <width>161</width>
-     <height>31</height>
+     <height>41</height>
     </rect>
    </property>
   </widget>
@@ -430,9 +430,9 @@ QPushButton:disabled {
    <property name="geometry">
     <rect>
      <x>80</x>
-     <y>409</y>
+     <y>450</y>
      <width>161</width>
-     <height>31</height>
+     <height>41</height>
     </rect>
    </property>
   </widget>

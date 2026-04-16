@@ -14,19 +14,20 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QMainWindow {
+   <string notr="true">QMainWindow { 
     background-color: #f9f9f9;
     font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif;
     font-size: 18pt;
     color: #333333;
 }
 
+/* Barra de menú */
 QMenuBar {
     background-color: #ffffff;
     font-size: 18pt;
     font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif;
     color: #333333;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 2px solid #f28c28; /* acento naranja */
 }
 
 QMenuBar::item {
@@ -35,10 +36,12 @@ QMenuBar::item {
 }
 
 QMenuBar::item:selected {
-    background: #e6e6e6;
+    background: #fff3e6; /* naranja muy suave */
+    color: #d96c00;
     border-radius: 4px;
 }
 
+/* Menú desplegable */
 QMenu {
     background-color: #ffffff;
     border: 1px solid #dddddd;
@@ -47,16 +50,26 @@ QMenu {
     color: #333333;
 }
 
+/* Items */
 QMenu::item {
     padding: 6px 20px;
     background: transparent;
 }
 
 QMenu::item:selected {
-    background-color: #f0f0f0;
+    background-color: #ffe0cc; /* naranja claro */
+    color: #b35400;
     border-radius: 4px;
 }
 
+/* Separadores (detalle elegante) */
+QMenu::separator {
+    height: 1px;
+    background: #f0c2a0;
+    margin: 4px 10px;
+}
+
+/* Acciones */
 QAction {
     font-size: 18pt;
     font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif;
@@ -84,6 +97,7 @@ QAction {
      <addaction name="actionRegresi_n_Lineal"/>
      <addaction name="actionIntegraci_n_Num_rica"/>
      <addaction name="actionIntegraci_n_Inversa"/>
+     <addaction name="actionAn_lisis_Completo"/>
      <addaction name="separator"/>
      <addaction name="actionSalir"/>
     </widget>
@@ -110,6 +124,11 @@ QAction {
   <action name="actionIntegraci_n_Inversa">
    <property name="text">
     <string>Integración Inversa</string>
+   </property>
+  </action>
+  <action name="actionAn_lisis_Completo">
+   <property name="text">
+    <string>Análisis Completo</string>
    </property>
   </action>
  </widget>

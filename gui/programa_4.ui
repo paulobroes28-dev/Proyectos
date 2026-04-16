@@ -109,12 +109,25 @@ QPushButton:disabled {
 }</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="3" column="5">
-    <widget class="QLabel" name="label_9">
+   <item row="17" column="1" colspan="2">
+    <widget class="QLabel" name="label_17">
      <property name="text">
-      <string>rxy=</string>
+      <string>LPI(70%)=</string>
      </property>
     </widget>
+   </item>
+   <item row="17" column="3">
+    <widget class="QLineEdit" name="lineEdit_14"/>
+   </item>
+   <item row="16" column="5" colspan="2">
+    <widget class="QLabel" name="label_20">
+     <property name="text">
+      <string>UPI(70%)=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="16" column="7" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_17"/>
    </item>
    <item row="5" column="5">
     <widget class="QLabel" name="label_10">
@@ -123,24 +136,17 @@ QPushButton:disabled {
      </property>
     </widget>
    </item>
-   <item row="3" column="1">
-    <widget class="QLabel" name="label_3">
+   <item row="3" column="5">
+    <widget class="QLabel" name="label_9">
      <property name="text">
       <string>rxy=</string>
      </property>
     </widget>
    </item>
-   <item row="5" column="1">
-    <widget class="QLabel" name="label_4">
+   <item row="3" column="1">
+    <widget class="QLabel" name="label_3">
      <property name="text">
-      <string>r2=</string>
-     </property>
-    </widget>
-   </item>
-   <item row="9" column="1">
-    <widget class="QLabel" name="label_6">
-     <property name="text">
-      <string>B0=</string>
+      <string>rxy=</string>
      </property>
     </widget>
    </item>
@@ -158,6 +164,20 @@ QPushButton:disabled {
      </property>
     </widget>
    </item>
+   <item row="9" column="1">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>B0=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>r2=</string>
+     </property>
+    </widget>
+   </item>
    <item row="8" column="5">
     <widget class="QLabel" name="label_11">
      <property name="text">
@@ -172,25 +192,29 @@ QPushButton:disabled {
      </property>
     </widget>
    </item>
-   <item row="16" column="5" colspan="2">
-    <widget class="QLabel" name="label_20">
+   <item row="11" column="5">
+    <widget class="QLabel" name="label_12">
      <property name="text">
-      <string>UPI(70%)=</string>
+      <string>B1=</string>
      </property>
     </widget>
    </item>
-   <item row="16" column="7" colspan="2">
-    <widget class="QLineEdit" name="lineEdit_17"/>
-   </item>
-   <item row="17" column="1" colspan="2">
-    <widget class="QLabel" name="label_17">
+   <item row="14" column="1">
+    <widget class="QLabel" name="label_13">
      <property name="text">
-      <string>LPI(70%)=</string>
+      <string>Yk=</string>
      </property>
     </widget>
    </item>
-   <item row="17" column="3">
-    <widget class="QLineEdit" name="lineEdit_14"/>
+   <item row="9" column="5">
+    <widget class="QLabel" name="label_14">
+     <property name="text">
+      <string>B0=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="3">
+    <widget class="QLineEdit" name="lineEdit_12"/>
    </item>
    <item row="17" column="7" colspan="2">
     <widget class="QLineEdit" name="lineEdit_18"/>
@@ -202,8 +226,11 @@ QPushButton:disabled {
      </property>
     </widget>
    </item>
-   <item row="15" column="3">
-    <widget class="QLineEdit" name="lineEdit_12"/>
+   <item row="11" column="6" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_5"/>
+   </item>
+   <item row="11" column="2" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_10"/>
    </item>
    <item row="15" column="5" colspan="2">
     <widget class="QLabel" name="label_19">
@@ -215,12 +242,6 @@ QPushButton:disabled {
    <item row="9" column="6" colspan="3">
     <widget class="QLineEdit" name="lineEdit_4"/>
    </item>
-   <item row="11" column="2" colspan="2">
-    <widget class="QLineEdit" name="lineEdit_10"/>
-   </item>
-   <item row="11" column="6" colspan="3">
-    <widget class="QLineEdit" name="lineEdit_5"/>
-   </item>
    <item row="15" column="1" colspan="2">
     <widget class="QLabel" name="label_15">
      <property name="text">
@@ -228,15 +249,15 @@ QPushButton:disabled {
      </property>
     </widget>
    </item>
-   <item row="15" column="7" colspan="2">
-    <widget class="QLineEdit" name="lineEdit_16"/>
-   </item>
    <item row="16" column="1" colspan="2">
     <widget class="QLabel" name="label_16">
      <property name="text">
       <string>UPI(70%)=</string>
      </property>
     </widget>
+   </item>
+   <item row="15" column="7" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_16"/>
    </item>
    <item row="9" column="2" colspan="2">
     <widget class="QLineEdit" name="lineEdit_9"/>
@@ -254,19 +275,6 @@ QPushButton:disabled {
    <item row="8" column="8">
     <widget class="QLineEdit" name="lineEdit_3"/>
    </item>
-   <item row="2" column="1" colspan="3">
-    <widget class="QLabel" name="label_2">
-     <property name="text">
-      <string>Valor real</string>
-     </property>
-    </widget>
-   </item>
-   <item row="5" column="6" colspan="3">
-    <widget class="QLineEdit" name="lineEdit_2"/>
-   </item>
-   <item row="7" column="2" rowspan="2" colspan="2">
-    <widget class="QLineEdit" name="lineEdit_8"/>
-   </item>
    <item row="3" column="2" colspan="2">
     <widget class="QLineEdit" name="lineEdit_6">
      <property name="sizeIncrement">
@@ -277,16 +285,13 @@ QPushButton:disabled {
      </property>
     </widget>
    </item>
-   <item row="3" column="6" colspan="3">
-    <widget class="QLineEdit" name="lineEdit"/>
+   <item row="7" column="2" rowspan="2" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_8"/>
    </item>
-   <item row="5" column="2" colspan="2">
-    <widget class="QLineEdit" name="lineEdit_7"/>
-   </item>
-   <item row="2" column="5" colspan="4">
-    <widget class="QLabel" name="label_8">
+   <item row="2" column="1" colspan="3">
+    <widget class="QLabel" name="label_2">
      <property name="text">
-      <string>Valor actual</string>
+      <string>Valor real</string>
      </property>
     </widget>
    </item>
@@ -296,6 +301,22 @@ QPushButton:disabled {
       <string>Caso de prueba 1</string>
      </property>
     </widget>
+   </item>
+   <item row="2" column="5" colspan="4">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>Valor actual</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_7"/>
+   </item>
+   <item row="3" column="6" colspan="3">
+    <widget class="QLineEdit" name="lineEdit"/>
+   </item>
+   <item row="14" column="7" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_15"/>
    </item>
    <item row="0" column="5" colspan="4">
     <widget class="QPushButton" name="boton_sumar_2">
@@ -307,29 +328,8 @@ QPushButton:disabled {
    <item row="13" column="3" rowspan="2">
     <widget class="QLineEdit" name="lineEdit_11"/>
    </item>
-   <item row="14" column="7" colspan="2">
-    <widget class="QLineEdit" name="lineEdit_15"/>
-   </item>
-   <item row="14" column="1">
-    <widget class="QLabel" name="label_13">
-     <property name="text">
-      <string>Yk=</string>
-     </property>
-    </widget>
-   </item>
-   <item row="9" column="5">
-    <widget class="QLabel" name="label_14">
-     <property name="text">
-      <string>B0=</string>
-     </property>
-    </widget>
-   </item>
-   <item row="11" column="5">
-    <widget class="QLabel" name="label_12">
-     <property name="text">
-      <string>B1=</string>
-     </property>
-    </widget>
+   <item row="5" column="6" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_2"/>
    </item>
   </layout>
  </widget>
