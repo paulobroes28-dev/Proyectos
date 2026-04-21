@@ -32,7 +32,7 @@ class VentanaPrograma4(QtWidgets.QDialog):
         modelo.calcular_regresion()
         modelo.calcular_intervalo_prediccion()
 
-        # Valores reales (PDF)
+        # Valores reales
         self.lineEdit_6.setText("0.954496574")
         self.lineEdit_7.setText("0.91106371")
         self.lineEdit_8.setText("1.77517E-05")
@@ -43,7 +43,7 @@ class VentanaPrograma4(QtWidgets.QDialog):
         self.lineEdit_13.setText("874.4311035")
         self.lineEdit_14.setText("414.427664")
 
-        # Valores actuales (calculados)
+        # Valores actuales
         self.lineEdit.setText(str(round(modelo.r, 9)))
         self.lineEdit_2.setText(str(round(modelo.r2, 9)))
         self.lineEdit_3.setText("{:.5E}".format(modelo.tail_area))
@@ -68,7 +68,7 @@ class VentanaPrograma4(QtWidgets.QDialog):
         modelo.calcular_regresion()
         modelo.calcular_intervalo_prediccion()
 
-        # Valores reales (PDF)
+        # Valores reales
         self.lineEdit_6.setText("0.933306898")
         self.lineEdit_7.setText("0.871061766")
         self.lineEdit_8.setText("7.98203E-05")
@@ -79,7 +79,7 @@ class VentanaPrograma4(QtWidgets.QDialog):
         self.lineEdit_13.setText("88.41565276")
         self.lineEdit_14.setText("33.3003578")
 
-        # Valores actuales (calculados)
+        # Valores actuales
         self.lineEdit.setText(str(round(modelo.r, 9)))
         self.lineEdit_2.setText(str(round(modelo.r2, 9)))
         self.lineEdit_3.setText("{:.5E}".format(modelo.tail_area))
