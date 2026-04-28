@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>603</width>
-    <height>500</height>
+    <width>525</width>
+    <height>449</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -82,7 +82,7 @@ QAction {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>603</width>
+     <width>525</width>
      <height>45</height>
     </rect>
    </property>
@@ -98,6 +98,9 @@ QAction {
      <addaction name="actionIntegraci_n_Num_rica"/>
      <addaction name="actionIntegraci_n_Inversa"/>
      <addaction name="actionAn_lisis_Completo"/>
+     <addaction name="actionPar_bolas"/>
+     <addaction name="actionElipses"/>
+     <addaction name="actionDeterminante_3x3_Sarrus"/>
      <addaction name="separator"/>
      <addaction name="actionSalir"/>
     </widget>
@@ -129,6 +132,21 @@ QAction {
   <action name="actionAn_lisis_Completo">
    <property name="text">
     <string>Análisis Completo</string>
+   </property>
+  </action>
+  <action name="actionPar_bolas">
+   <property name="text">
+    <string>Parábolas</string>
+   </property>
+  </action>
+  <action name="actionElipses">
+   <property name="text">
+    <string>Elipses</string>
+   </property>
+  </action>
+  <action name="actionDeterminante_3x3_Sarrus">
+   <property name="text">
+    <string>Determinante 3x3 Sarrus</string>
    </property>
   </action>
  </widget>

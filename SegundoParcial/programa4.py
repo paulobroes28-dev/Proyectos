@@ -5,7 +5,6 @@ from SegundoParcial.simpson import Simpson
 from SegundoParcial.programa3 import IntegracionInversa
 
 class AnalisisCompleto(object):
-
     def __init__(self, x, y, xk):
         self.x = np.array(x)
         self.y = np.array(y)

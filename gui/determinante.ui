@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>983</width>
+    <height>606</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog { 
+    background-color: #fff8e1; /* Dorado muy claro / crema */
+    border-radius: 10px;
+}
+
+QLabel {
+    color: #8a6d1a; /* Dorado oscuro */
+    font-family: &quot;Segoe UI&quot;, &quot;Arial Black&quot;;
+    font-size: 21pt;
+    font-weight: bold;
+}
+
+QLabel#label_resultado {
+    color: #b8962e; /* Dorado más intenso */
+    font-family: &quot;Segoe UI&quot;, &quot;Arial Black&quot;;
+    font-size: 64pt;
+    font-weight: bold;
+}
+
+QLineEdit {
+    background-color: #ffffff;
+    border: 2px solid #d4af37; /* Dorado clásico */
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 12pt;
+    color: #8a6d1a;
+}
+
+QLineEdit:focus {
+    border: 2px solid #b8962e; /* Dorado más profundo */
+    background-color: #fff3cd; /* Amarillo suave */
+}
+
+QPushButton {
+    background-color: #d4af37; /* Dorado principal */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #c19a2b; /* Dorado más intenso */
+}
+
+QPushButton:pressed {
+    background-color: #a67c00; /* Dorado oscuro */
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="4">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>valor a21=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5">
+    <widget class="QLineEdit" name="edit_numero1_7">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0" colspan="9">
+    <widget class="QPushButton" name="boton_sumar">
+     <property name="text">
+      <string>Calcular</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>valor a11=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QLineEdit" name="edit_numero1_2"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>valor a12=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QLineEdit" name="edit_numero1_3">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>valor a13=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QLineEdit" name="edit_numero1_4">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="4">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>valor a22=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="5">
+    <widget class="QLineEdit" name="edit_numero1_5">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="4">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>valor a23=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="5">
+    <widget class="QLineEdit" name="edit_numero1_6">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="6">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>valor a31=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="7">
+    <widget class="QLineEdit" name="edit_numero1_10">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="6">
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>valor a32=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="7">
+    <widget class="QLineEdit" name="edit_numero1_8">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="6">
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>valor a33=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="7">
+    <widget class="QLineEdit" name="edit_numero1_9">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="2">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Det=</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="4">
+    <widget class="QLineEdit" name="edit_numero1"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

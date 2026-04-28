@@ -2,7 +2,6 @@ from SegundoParcial.simpson import Simpson
 import math
 
 class IntegracionInversa(object):
-
     def __init__(self, p, dof, error=0.000001):
         self.p = p
         self.dof = dof
@@ -40,7 +39,6 @@ class IntegracionInversa(object):
             
             if signo_anterior is not None and signo_actual != signo_anterior:
                 self.d /= 2
-
             signo_anterior = signo_actual
 
             
@@ -51,7 +49,6 @@ class IntegracionInversa(object):
             if self.d < 1e-10:
                 self.resultado = self.x
                 break
-
             iter_count += 1
 
       
